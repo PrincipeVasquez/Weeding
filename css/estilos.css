@@ -1,0 +1,233 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #E8E9ED;
+	font-family: 'Lobster', cursive;
+}
+
+.contenedor {
+	margin: 20px auto;
+	width: 70%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+header {
+	width: 100%;
+	padding: 5px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+header .menu {
+	position: relative;
+	bottom: 35px;
+	margin-right: 10px;
+}
+
+header .menu a {
+	color: #607196;
+	text-decoration: none;
+	margin-right: 10px;
+	font-size: 18px;
+	padding: 20px 15px;
+	padding-top: 80px;
+}
+
+header .menu a:hover {
+	background: #BABFD1;
+	color: #fff;
+}
+
+.banner {
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: #E8E9ED;
+	padding-top: 30px;
+	border-top: 5px solid #8D98B4;
+	border-bottom: 5px solid #8D98B4;
+}
+
+.main article {
+	width: 30%;
+	margin-right: 30px;
+}
+
+.main article h2 {
+	padding-bottom: 15px;
+	border-bottom: 2px solid #BABFD1;
+	color: #8D98B4;
+	font-size: 30px;
+}
+
+.main article .art {
+	padding: 30px 0px;
+	border-bottom: 3px solid #BABFD1;
+	float: left;
+
+}
+
+.main article .art .pareja {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.main article .art .pareja .info {
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.main article .art .pareja .info h3 {
+	color: #7785A5;
+}
+
+.main article .art p {
+	clear: both;
+}
+
+.main article .art .info-par p {
+	padding-top: 15px;
+}
+
+.main article p {
+	color: #8D98B4;
+}
+
+.main article a {
+	float: right;
+	padding-bottom: 40px;
+	color: #B07699;
+}
+
+/*FOOTER*/
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 20px;
+	color: #607196;
+}
+
+footer .redes-sociales {
+	margin-right: 20px;
+}
+
+footer .autor {
+	color: #B07699;
+}
+
+footer .redes-sociales a {
+	margin-right: 20px;
+	color: #607196;
+}
+
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width: 1024px) {
+	.contenedor {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contenedor {
+		width: 95%;
+	}
+
+	header {
+		flex-direction: column;
+		padding-bottom: 5px;
+	}
+
+	header .menu {
+		width: 100%;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 5px;
+	}
+
+	.main {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.main article {
+		width: 29%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.contenedor {
+		width: 100%;
+	}
+
+	header {
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	header .logo {
+		width: 100%;
+	}
+
+	header .menu {
+		width: 100%;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 5px;
+	}
+
+	header .menu a {
+		margin-right: none;
+		padding: 2px;
+	}
+
+	.main article {
+		width: 100%;
+		margin-left: 30px;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	footer .autor {
+		margin-bottom: 20px;
+	}
+
+	footer .redes-sociales {
+		margin-left: 20px;
+		text-align: center;
+	}
+}
